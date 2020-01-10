@@ -96,6 +96,7 @@ end
 #---------refactor of above code--------------
 
 def sell_pet_to_customer(shop_name, sold_pet, customer)
+  #p find_pet_by_name(shop_name, sold_pet) != nil
   if sold_pet != nil
     if customer_can_afford_pet(customer, sold_pet) == true
       add_pet_to_customer(customer, sold_pet)
